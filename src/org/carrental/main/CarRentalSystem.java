@@ -14,7 +14,8 @@ public class CarRentalSystem {
 
         System.out.println("Welcome to the Car Rental System!");
         while (true) {
-            System.out.println("\nCar Rental System Menu:");
+//            System.out.println("\nCar Rental System Menu:");
+        	System.out.println("");
             System.out.println("1. Add Car");
             System.out.println("2. Remove Car");
             System.out.println("3. List Available Cars");
@@ -25,8 +26,8 @@ public class CarRentalSystem {
             System.out.println("8. List Active Leases");
             System.out.println("9. List Lease History");
             System.out.println("10. Record Payment");
-            System.out.println("11. Find Customer By Id");
-            System.out.println("12. Exit");
+//            System.out.println("11. Find Customer By Id");
+            System.out.println("11. Exit");
             System.out.print("Choose an option: ");
             
             int option;
@@ -144,19 +145,19 @@ public class CarRentalSystem {
                         System.out.println("Error: " + e.getMessage());
                     }
                     break;
-                case 11: // Record Payment
-                    System.out.println("Enter CustomerID to find :");
-                    int customerId1 = scanner.nextInt();
-                    try {
-                        repository.findCustomerById(customerId1);
-                        System.out.println("This is the Customer with ."+customerId1);
-                    } catch (Exception e) {
-                        System.out.println("Error: " + e.getMessage());
-                    }
-                    break;
+//                case 11: // Record Payment
+//                    System.out.println("Enter CustomerID to find :");
+//                    int customerId1 = scanner.nextInt();
+//                    try {
+//                        repository.findCustomerById(customerId1);
+//                        System.out.println("This is the Customer with ."+customerId1);
+//                    } catch (Exception e) {
+//                        System.out.println("Error: " + e.getMessage());
+//                    }
+//                    break;
 
 
-                case 12: // Exit
+                case 11: // Exit
                     System.out.println("Thanks For Using Our Car Rental System!!!");
                     scanner.close();
                     repository.closeConnection();
