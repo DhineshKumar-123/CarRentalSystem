@@ -6,7 +6,7 @@ public class Car {
     private String model;
     private int year;
     private double dailyRate;
-    private String status; // "available" or "notAvailable"
+    private String status; 
     private int passengerCapacity;
     private double engineCapacity;
 
@@ -23,7 +23,6 @@ public class Car {
         this.engineCapacity = engineCapacity;
     }
 
-    // Getters and setters
     public int getVehicleID() {
         return vehicleID;
     }

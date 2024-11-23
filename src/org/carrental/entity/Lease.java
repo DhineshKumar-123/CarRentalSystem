@@ -8,8 +8,7 @@ public class Lease {
     private int customerID;
     private Date startDate;
     private Date endDate;
-    private String type; // "daily" or "monthly"
-
+    private String type; 
     public Lease() {}
 
     public Lease(int leaseID, int vehicleID, int customerID, Date startDate, Date endDate, String type) {
@@ -21,7 +20,7 @@ public class Lease {
         this.type = type;
     }
 
-    // Getters and setters
+ 
     public int getLeaseID() {
         return leaseID;
     }

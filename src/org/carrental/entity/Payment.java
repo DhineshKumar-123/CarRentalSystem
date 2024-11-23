@@ -17,7 +17,6 @@ public class Payment {
         this.amount = amount;
     }
 
-    // Getters and setters
     public int getPaymentID() {
         return paymentID;
     }

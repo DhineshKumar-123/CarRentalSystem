@@ -17,7 +17,7 @@ public class Customer {
         this.phoneNumber = phoneNumber;
     }
 
-    // Getters and setters
+ 
     public int getCustomerID() {
         return customerID;
     }
